@@ -1,0 +1,159 @@
+/* Login.css */
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: black;
+}
+
+.login-box {
+  background-color: silver;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-header img {
+  width: 100px;
+  height: auto;
+}
+
+.login-content {
+  text-align: center;
+}
+
+.login-content h2 {
+  margin-bottom: 20px;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-size: 20px; /* Adjust size as needed */
+  background-repeat: no-repeat;
+  background-position: 10px center; /* Adjust position as needed */
+  padding-left: 40px; /* Space for the logo */
+  margin-bottom: 10px;
+  margin-left: 70px;
+}
+
+.facebook {
+  background-color: #3b5998;
+  color: #fff;
+  max-width: 100%;
+  transition: transform 0.3s ease-in-out;
+  background-image: url('facebook.png');
+}
+
+.google {
+  background-color: #db4437;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+  background-image: url('google.png');
+}
+
+.facebook:hover,.google:hover{
+  transform: scale(1.2); 
+}
+
+.login-form {
+  margin-top: 20px;
+}
+
+.login-form input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.login-options label {
+  display: flex;
+  align-items: center;
+}
+
+.login-options input {
+  margin-right: 5px;
+}
+
+.login-submit {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.divider {
+  margin: 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+.divider::before, .divider::after {
+  content: '';
+  height: 1px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  width: 40%;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.divider span {
+  padding: 0 10px;
+  background: #fff;
+}
+
+h2{
+  font-weight: bold;
+}
+
+.login-header img {
+  width: 62px;
+  height: 123px;
+}
+.error{
+  color:white;
+  text-align: center;
+  margin: 2rem;
+ 
+}
