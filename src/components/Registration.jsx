@@ -116,7 +116,7 @@ const Register = () => {
               
               <button type="submit" className="register-submit" disabled={isSubmitting}>Sign up</button>
             </form>
-            <Link to="/login"><a>Already have an account? Log in</a></Link>
+            <Link to="/login"><b>Already have an account? Log in</b></Link>
           </div>
         </div>
       </div>

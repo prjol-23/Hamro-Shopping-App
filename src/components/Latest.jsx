@@ -60,9 +60,10 @@ const Latest = () => {
         />
         <h2 className="card-title">{gadgets[0].name}</h2>
         <p className="card-text">{gadgets[0].description}</p>
+          <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
         <Link to="/login">
-          <h5 style={{ backgroundColor: "#c0c0c033" }}>Add to cart</h5>
         </Link>
+       
       </Container>
 
       <Container className="card">
@@ -74,9 +75,10 @@ const Latest = () => {
         />
         <h2 className="card-title">{gadgets[1].name}</h2>
         <p className="card-text">{gadgets[1].description}</p>
+          <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
         <Link to="/login">
-          <h5 style={{ backgroundColor: "#c0c0c033" }}>Add to cart</h5>
         </Link>
+       
       </Container>
       <Container className="card">
         <img
@@ -87,9 +89,10 @@ const Latest = () => {
         />
         <h2 className="card-title">{gadgets[2].name}</h2>
         <p className="card-text">{gadgets[2].description}</p>
+          <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
         <Link to="/login">
-          <h5 style={{ backgroundColor: "#c0c0c033" }}>Add to cart</h5>
         </Link>
+       
       </Container>
       <Container className="card">
         <img
@@ -100,9 +103,10 @@ const Latest = () => {
         />
         <h2 className="card-title">{gadgets[3].name}</h2>
         <p className="card-text">{gadgets[3].description}</p>
+          <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
         <Link to="/login">
-          <h5 style={{ backgroundColor: "#c0c0c033" }}>Add to cart</h5>
         </Link>
+        
       </Container>
       <Container className="card">
         <img
@@ -113,9 +117,10 @@ const Latest = () => {
         />
         <h2 className="card-title">{gadgets[4].name}</h2>
         <p className="card-text">{gadgets[4].description}</p>
-        <Link to="/login">
-          <h5 style={{ backgroundColor: "#c0c0c033" }}>Add to cart</h5>
-        </Link>
+          <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
+        {/* <Link to="/login">
+        </Link> */}
+      
       </Container>
 
       <Container className="card">
@@ -127,11 +132,34 @@ const Latest = () => {
         />
         <h2 className="card-title">{gadgets[5].name}</h2>
         <p className="card-text">{gadgets[5].description}</p>
-        <Link to="/login">
-          <h5 style={{ backgroundColor: "#c0c0c033" }}>Add to cart</h5>
-        </Link>
+          <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to cart</button>
+        {/* <!-- Button trigger modal --> */}
+    {/* <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Launch demo modal
+    </button> */}
+    
       </Container>
-      <Popup/>
+    {/* <!-- Modal --> */}
+    <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div className="modal-dialog modal-dialog-centered">
+        <div className="modal-content">
+          <div className="modal-header">
+            <h1 className="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div className="modal-body">
+           <b>Please login to Add to cart</b> 
+          </div>
+          <div className="modal-footer">
+            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <Link to="/login">
+            <button type="button" className="btn btn-primary" data-bs-dismiss="modal">Login</button>
+    </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+      
       <Footer />
     </>
   );
