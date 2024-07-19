@@ -39,7 +39,8 @@ const handleOnChange = (e) =>{
         <button className="login-button google">Log in with Google</button>
         
         
-        <Link to="/register"><b>Create an account</b></Link>
+        <Link to="/register"><p>Create an account</p></Link>
+        
         <div className="divider">OR</div>
 
         <form className="login-form">
@@ -58,7 +59,7 @@ const handleOnChange = (e) =>{
            className="login-input" />
           <input type="password" placeholder="Password" className="login-input" />
         
-           <Link to=""><b>Forgot password?</b></Link>
+           <Link to=""><p>Forgot password?</p></Link>
     
           <Link to="/user">
              <button type="submit" className="login-submit">Sign in</button>
